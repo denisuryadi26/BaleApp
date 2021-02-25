@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for device API libraries to load
+    //
+    function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+    }
+
+    // device APIs are available
+    //
+    function onDeviceReady() {
+        // Register the event listener
+        document.addEventListener("backbutton", onBackKeyDown, false);
+    }
+
+    // Handle the back button
+    //
+    function onBackKeyDown() {
+    }
+
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+  </head>
+  <body>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+          <center><p>Bahasa Inggris</p></center>
+        <p>accept = menerima<br>
+allow = memperbolehkan<br>
+ask = meminta, bertanya<br>
+believe = percaya<br>
+borrow = meminjam<br>
+break = mematahkan, memutuskan<br>
+bring = membawa<br>
+buy = membeli<br>
+can/be able = dapat / bisa / mampu<br>
+cancel = membatalkan<br>
+change = mengubah<br>
+clean = membersihkan<br>
+comb = menyisir (rambut)<br>
+complain = mengeluh<br>
+cough = batuk<br>
+count = menghitung<br>
+cut = memotong<br>
+dance = menari (berdansa)<br>
+do = melakukan, mengerjakan<br>
+draw = menggambar<br>
+drink = meminum, minum<br>
+drive = mengendarai, berkendaraan<br>
+eat = makan, memakan<br>
+explain = menjelaskan<br>
+fall = jatuh<br>
+fill = mengisi, memenuhi<br>
+find = menemukan<br>
+finish = menyelesaikan<br>
+fit = cocok<br>
+fix = memperbaiki, membetulkan<br>
+fly = menerbangkan, terbang<br>
+forget = lupa, melupakan<br>
+get = mendapatkan<br>
+give = memberikan<br>
+go = pergi<br>
+grow = tumbuh<br>
+hate = membenci<br>
+have = memiliki<br>
+hear = mendengar<br>
+hurt = terluka<br>
+kiss = mencium<br>
+know = mengetahui<br>
+learn = mempelajari<br>
+leave = meninggalkan<br>
+lend = meminjamkan<br>
+listen = mendengarkan<br>
+live = hidup<br>
+look = tampak<br>
+lose = kehilangan<br>
+love = mencintai<br>
+make/do = menikmati<br>
+need = membutuhkan<br>
+open = membuka<br>
+order = menyuruh<br>
+close/shut = menutup<br>
+organize = mengatur<br>
+pay = membayar<br>
+play = bemain<br>
+put = meletakkan<br>
+rain = hujan<br>
+read = membaca<br>
+reply = menjawab<br>
+run = lari<br>
+say = mengatakan<br>
+see = melihat<br>
+sell = menjual<br>
+send = mengirimkan<br>
+sign = menandatangai<br>
+sing = bernyanyi<br>
+sit = duduk<br>
+sleep = tidur<br>
+smoke = merokok<br>
+speak = bericara<br>
+spell = mengeja<br>
+spend = menghabiskan<br>
+stand = berdiri<br>
+start/begin = memulai<br>
+study = belajar<br>
+succeed = suksa<br>
+swim = berenang<br>
+take = mengambil<br>
+talk = mengatakan<br>
+teach = mengajar, mengajarkan<br>
+tell = bilang, memberitahu<br>
+think = kira, berpikir<br>
+translate = menerjemahkan<br>
+travel = bepergian<br>
+try = mencoba<br>
+turn off = mematikan<br>
+turn on = menyalakan<br>
+type = mengetik<br>
+understand = memahami<br>
+use = menggunakan<br>
+wait = menunggu<br>
+wake up = bangun<br>
+walk = jalan<br>
+want = ingin<br>
+watch = menonton<br>
+work = bekerja<br>
+worry = khawatir<br>
+write = menulis<br>
+
+</p>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+          <center><p>Bahasa Arab</p></center>
+        <p>اِخْتَارَ - يَخْتَارُ  = memilih<br>
+
+اِرْتَفَعَ - يَرْتَفِعُ  = meningkat<br>
+
+اِسْتَحَمَّ - يَسْتَحِمُّ   = mandi<br>
+
+اِسْتَطَاعَ - يَسْتَطِيْعُ  = bisa/ dapat<br>
+
+اِسْتَغْرَقَ - يَسْتَغْرِقُ  = memerlukan<br>
+
+اِسْتَيْقَظَ - يَسْتَيْقِظُ  = bangun<br>
+
+اِشْتَرَى - يَشْتَرِي  = membeli<br>
+
+اِعْتَمَرَ - يَعْتَمِرُ  = berumroh<br>
+
+اِقْتَرَبَ - يَقْتَرِبُ  = mendekat<br>
+
+اِنْتَظَرَ - يَنْتَظِرُ  = menanti<br>
+
+اِنْتَقَلَ - يَنْتَقِلُ    = berpindah<br>
+
+اِنْتَهَى - يَنْتَهِيْ  = habis<br>
+
+أَحَبَّ - يُحِبُّ   = mencintai<br>
+
+أَخَذَ - يَأْخُذُ   = mengambil<br>
+
+أَرَادَ - يُرِيْدُ   = ingin<br>
+
+أَشْعَلَ - يُشْعِلُ   = menyalakan<br>
+
+أَصَابَ - يُصِيْبُ  = mengenai<br>
+
+أَعْطَى - يُعْطِيْ  = memberi<br>
+
+أَقَامَ - يُقِيْمُ   = bermukim<br>
+
+أَكَلَ - يَأْكُلُ    = makan<br>
+
+أَمْطَرَ - يُمْطِرُ  = turun hujan<br>
+
+أَيْقَظَ - يُوْقِظُ   = membangunkan<br>
+
+بَاعَ - يَبِيْعُ   = menjual<br>
+
+بَدَأَ - يَبْدَأُ   = memulai<br>
+
+بَقِيَ - يَبْقَى   = tetap/ sisa<br>
+
+تَرَكَ - يَتْرُقُ   = meninggalkan<br>
+
+تَزَوَّجَ - يَتَزَوَّجُ  = menikah<br>
+
+تَغَيَّبَ - يَتَغَيَّبُ  = tdk hadir<br>
+
+تَكَلَّمَ - يَتَكَلَّمُ   = berbicara<br>
+
+تَوَضَأَ - يَتَوَضَأُ  = berwudhu<br>
+
+ثَأَرَ - يَثْأُرُ   = membalas<br>
+
+ثَبَتَ - يَثْبُتُ   = tetap<br>
+
+جَادَلَ - يُجَادِلُ  = mendebat<br>
+
+جَاهَدَ - يُجَاهِدُ  = berjihad/sungguh''<br>
+
+جَاهَرَ - يُجَاهِرُ  = menampakkan<br>
+
+جَاوَزَ - يُجَاوِزُ  = melewati<br>
+
+ًجَلَسَ - يَجْلِس          = duduk<br>
+
+حَجَّ - يَحُجُّ   = haji<br>
+
+حَزِنَ - يَحْزَنُ  = sedih<br>
+
+حَسِبَ - يَحْسُبُ  = menghitung<br>
+
+حَضَرَ - يَحْضُرُ  = hadir<br>
+
+حَلَقَ - يَحْلُقُ   = mencukur<br>
+
+خَانَ - يَخُوْنُ   = berkhianat<br>
+
+خَرَجَ - يَخْرُجُ  = keluar<br>
+
+خَلَعَ - يَخْلَعُ   = melepas<br>
+
+دَخَلَ - يَدْخُلُ   = masuk<br>
+
+دَرَّسَ - يُدَرِّسُ  = mengajar<br>
+
+دَرَسَ - يَدْرُسُ  = belajar<br>
+
+دَفَعَ - يَدْفَعُ   = membayar<br>
+
+ذَاقَ - يَذُوْقُ   = mencicipi<br>
+
+ذَبَحَ - يَذْبَحُ   = menyembelih<br>
+
+ذَهَبَ - يَذْهَبُ  = pergi<br>
+
+رَأَى - يَرَى   = melihat<br>
+
+رَمَى - يَرْمِيْ  = melempar<br>
+
+زَادَ - يَزِيْدُ   = bertambah<br>
+
+زَارَ - يَزُوْرُ   = mengunjungi<br>
+
+زَيَّنَ - يُزَيِّنُ   = menghiasi<br>
+
+سَاعَدَ - يُسَاعِدُ  = membantu<br>
+
+سَافَرَ - يُسَافِرُ  = pergi<br>
+
+سَالَ - يَسِيْلُ   = mengalir<br>
+
+سَعَى - يَسْعَى  = bersa'i<br>
+
+سَكَنَ - يَسْكِنُ   = tinggal<br>
+
+سَمِعَ - يَسْمَعُ   = mendengar<br>
+
+شَاهَدَ - يُشَاهِدُ  = menyaksikan<br>
+
+شَرِبَ - يَشْرَبُ   = meminum<br>
+
+شَعَرَ - يَشْعُرُ   = merasakan<br>
+
+صَامَ - يَصُوْمُ  = puasa<br>
+
+صَلَّى - يُصَلِّي  = sholat<br>
+
+ضَاعَ - يَضِيْعُ  = hilang<br>
+
+ضَحِكَ - يَضْحَكُ  = tertawa<br>
+
+ضَرَبَ - يَضْرِبُ  = memukul<br>
+
+طَافَ - يَطُوْفُ  = bertowaf<br>
+
+طَبَخَ - يَطْبُخُ   = memasak<br>
+
+طَلَبَ - يَطْلُبُ  = meminta<br>
+
+ظَلَمَ - يَظْلِمُ   = dzalim<br>
+
+ظَنَّ - يَظُنُّ   = menyangka<br>
+
+ظَهَرَ - يَظْهَرُ  = tampak<br>
+
+عَمِلَ - يَعْمَلُ   = bekerja<br>
+
+غَادَرَ - يُغَادِرُ  = meninggalkan<br>
+
+غَسَلَ - يَغْسِلُ  = mencuci<br>
+
+فَتَحَ - يَفْتَحُ   = membuka<br>
+
+فَحَصَ - يَفْحَصُ  = mendiaknosa<br>
+
+فَضَّلَ - يُفَضِّلُ  = lebih memilih<br>
+
+فَعَلَ - يَفْعَلُ    = melakukan<br>
+
+فَقَدَ - يَفْقِدُ   = kehilangan<br>
+
+قَابَلَ - يُقَابِلُ   = menemui<br>
+
+قَالَ - يَقُوْلُ   = berkata<br>
+
+قَرَأَ - يَقْرَأُ   = membaca<br>
+
+قَسَّمَ - يُقَسِّمُ    = membagi<br>
+
+قَضَى - يَقْضِيْ  = menghabiskan (wktu)<br>
+
+قَطَعَ - يَقْطَعُ   = memotong<br>
+
+قَطَفَ - يَقْطَفُ  = memetik<br>
+
+كَتَبَ - يَكْتُبُ   = menulis<br>
+
+كَنَسَ - يَكْنُسُ   = menyapu<br>
+
+كَوَى - يَكْوِيْ  = menyetrika<br>
+
+نَامَ - يَنَامُ   = tidur<br>
+
+نَصَحَ - يَنْصَحُ  = menasehati<br>
+
+نَظَرَ - يَنْظُرُ   = melihat<br>
+
+نَفَخَ - يَنْفُخُ   = meniup<br>
+
+وَصَل - يَصِلُ (إلى) = sampai<br>
+
+وَضَعَ - يَضَعُ  = meletakkan<br>
+          </p>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding">Bale App</div>
+            <div class="right">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+              <div class="content-block-title">Selamat Datang Di Aplikasi Bale</div>
+              <div class="content-block">
+                <div class="content-block-inner">
+                  <p>Untuk apa aplikasi ini dibuat?</p>
+                  <p>Aplikasi ini dibuat untuk memudahkan orang-orang membaca Sholawat, Kerontang, dan sebagainya. Maka pergunakanlah aplikasi ini sebaik mungkin.</p>
+                </div>
+              </div>
+              <div class="content-block-title">Pilih Salah Satu :</div>
+              <div class="list-block">
+                <ul>
+                  <li><a href="sholawat.html" class="item-link">
+                      <div class="item-content">
+                        <div class="item-inner"> 
+                          <div class="item-title">Sholawat</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="kerontang.html" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Kerontang</div>
+                        </div>
+                      </div></a></li>
+                    <li><a href="kalimat_inggris.html" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Contoh Kalimat B.Inggris</div>
+                        </div>
+                      </div></a></li>
+                    <li><a href="kalimat_arab.html" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Contoh Kalimat B.Arab</div>
+                        </div>
+                      </div></a></li>
+                  <li><a href="about.html" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Tentang Pembuat</div>
+                        </div>
+                      </div></a></li>
+<!--                       <li><a href="search.html" class="item-link">
+                      <div class="item-content"> 
+                        <div class="item-inner">
+                          <div class="item-title">Search</div>
+                        </div>
+                      </div></a></li> -->
+                </ul>
+              </div>
+              <div class="content-block-title">Kosakata Sehari-hari</div>
+              <div class="content-block">
+                <div class="row">
+                  <div class="col-50"><a href="#" data-panel="left" class="button open-panel">Kosakata Inggris</a></div>
+                  <div class="col-50"><a href="#" data-panel="right" class="button open-panel">Kosakata Arab</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Bottom Toolbar-->
+        <div class="toolbar">
+          <div class="toolbar-inner">
+            <a href="index.html" class="link">Home</a>
+            <div class="right"><a href="#" class="back link"></i><span>Kembali</span></a></div>
+            <!-- <a href="#" class="link">Keluar</a></div> -->
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+
+    <script type="text/javascript" src="DataTables/datatables.min.js"></script>
+  </body>
+</html>
